@@ -6,7 +6,7 @@
 /*   By: chel-bou <chel-bou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/20 14:43:23 by chel-bou          #+#    #+#             */
-/*   Updated: 2026/11/02 13:54:30 by chel-bou         ###   ########.fr       */
+/*   Updated: 2026/11/04 15:46:13 by chel-bou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ int	ft_atoi(const char *nptr)
 	}
 	while (ft_isdigit(nptr[i]))
 	{
-		res = res * 10 + nptr[i] - '0';
+		res = res * 10 + (nptr[i] - '0');
 		i++;
 	}
 	return (res * sign);
