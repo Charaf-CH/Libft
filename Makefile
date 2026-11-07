@@ -49,21 +49,21 @@ SRCS =	ft_atoi.c \
 	ft_lstlast.c \
 	ft_lstsize.c
 
-OBJS = ${SRCS:.c=.o}
+OBJS = $(SRCS:.c=.o)
 
-all : ${NAME}
+all : $(NAME)
 
-${NAME} : ${OBJS}
-	${AR} ${NAME} ${OBJS}
+$(NAME) : $(OBJS)
+	$(AR) $(NAME) $(OBJS)
 
 %.o: %.c
-	${CC} ${FLAGS} -c $< -o $@
+	$(CC) $(FLAGS) -c $< -o $@
 
 clean:
-	${RM} ${OBJS}
+	$(RM) $(OBJS)
 
 fclean: clean
-	${RM} ${NAME}
+	$(RM) $(NAME)
 
 re: fclean all
 

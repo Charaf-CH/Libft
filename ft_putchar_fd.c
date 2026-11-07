@@ -6,12 +6,11 @@
 /*   By: chel-bou <chel-bou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/02 15:21:46 by chel-bou          #+#    #+#             */
-/*   Updated: 2026/11/02 15:30:40 by chel-bou         ###   ########.fr       */
+/*   Updated: 2026/11/07 17:58:42 by chel-bou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <fcntl.h>
 
 void	ft_putchar_fd(char c, int fd)
 {

@@ -98,24 +98,37 @@ Available operations:
 - `ft_lstiter` – Applies a function to every node's content.
 - `ft_lstmap` – Creates a new list by transforming existing node contents.
 
-## Building the Library
+## Instructions
 
 The project requires a C compiler and a Unix development environment.
 
-Clone the repository:
-
-```bash
-git clone <repository-url>
-cd libft
-```
-
-Build the library:
+**Compile the library:**
 
 ```bash
 make
 ```
 
 This compiles the source files into object files and packages them into `libft.a`.
+
+**Compile a program using Libft:**
+
+First, include the library header in your C source file:
+
+```c
+#include "libft.h"
+```
+
+Then compile your program together with the static library:
+
+```bash
+cc main.c libft.a -o program
+```
+
+**Run the executable:**
+
+```bash
+./program
+```
 
 ### Makefile Commands
 
@@ -125,26 +138,6 @@ This compiles the source files into object files and packages them into `libft.a
 | `make clean` | Removes generated object files. |
 | `make fclean` | Removes object files and the library. |
 | `make re` | Performs a clean rebuild. |
-
-## Using Libft
-
-Include the library header in your C source files:
-
-```c
-#include "libft.h"
-```
-
-Compile your program and link the library:
-
-```bash
-cc main.c -I. -L. -lft -o program
-```
-
-Run the executable:
-
-```bash
-./program
-```
 
 ## Resources & References
 
@@ -156,7 +149,7 @@ The following references helped me understand function behavior, system calls, a
 
 ### AI Usage
 
-ChatGPT was used as a technical learning assistant throughout the project.
+AI was used as a technical learning assistant throughout the project.
 
 Its involvement included:
 
